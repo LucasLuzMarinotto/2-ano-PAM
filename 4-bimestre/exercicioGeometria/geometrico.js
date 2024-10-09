@@ -1,45 +1,89 @@
 console.log('Digite um número')
 
-var n = Number;
+// Variáveis
+
+var apotema = Number;
+
+var tipo = Number;
+
+var numero = Number;
 
 var h = Number;
 
-var p = Number;
+var perimetro = Number;
 
-var a = Number;
+var area = Number;
 
-function formaG(n){
+var base = Number;
+
+// Qual forma é
+
+function formaG(n, t){
     switch(n){
         case 3:
-            console.log('Triângulo')
+            console.log('Triângulo');
             break;
         case 4:
-            console.log('Quadrado')
+            if(t <= 1){
+                console.log('Quadrado');
+            }else{
+                console.log('retângulo');
+            }
             break;
         case 5:
-            console.log('Pentágono')
+            console.log('Pentágono');
             break;
         case 6:
-            console.log('Hexágono')
+            console.log('Hexágono');
             break;
         case 7:
-            console.log('Heptágono')
+            console.log('Heptágono');
             break;
         case 8:
-            console.log('Octógono')
+            console.log('Octógono');
             break;
         case 9:
-            console.log('Eneágono')
+            console.log('Eneágono');
             break;
         case 10:
-            console.log('Decágono')
+            console.log('Decágono');
             break;
         default:
             console.log('Forma geométrica não implementada');
             break;
     }
+    numero = n;
+    tipo = t;
 }
 
-function calculoGeomeria(){
+// Calcular perimetro e área
+
+function calcularGeometria(base , h, apotema){
+
+    // Calcular Perímetro
+
+    if(numero == 10){
+        
+    }else if(numero == 9){
+
+    }else if(numero == 8){
+        
+    }else if(numero == 7){
+
+    }else if(numero == 6){
+        area = 6 * (base * h /2);
+    }else if(numero == 5){
+        area = perimetro * apotema;
+    }else if(numero == 4){
+        if(tipo <= 1){
+            area = base * base;
+        }else{
+            area = base * h;
+        }
+    }else if(numero == 3){
+        area = (base * h) / 2;
+    }
+
+    //Calcular Área
 
 }
