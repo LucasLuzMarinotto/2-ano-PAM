@@ -58,20 +58,46 @@ function formaG(n, t){
 
 // Calcular perimetro e área
 
-function calcularGeometria(base , h, apotema){
+function calcularGeometria(base ,h, apotema){
 
     // Calcular Perímetro
 
     if(numero == 10){
-        
+        perimetro = numero * base;
     }else if(numero == 9){
-
+        perimetro = numero * base;
     }else if(numero == 8){
-        
+        perimetro = numero * base;
     }else if(numero == 7){
-
+        perimetro = numero * base;
     }else if(numero == 6){
-        area = 6 * (base * h /2);
+        perimetro = numero * base;
+    }else if(numero == 5){
+        perimetro = numero * base;
+    }else if(numero == 4){
+        if(tipo <= 1){
+            perimetro = numero * base;
+        }else{
+            perimetro = (2 * base) + (2 * h);
+        }
+    }else if(numero == 3){
+        perimetro = numero * base;
+    }else(
+        console.log('Não foi possível calcular o perímetro')
+    )
+
+    //Calcular Área
+
+    if(numero == 10){
+        area = numero * base;
+    }else if(numero == 9){
+        area = numero * base;
+    }else if(numero == 8){
+        area = numero * base;
+    }else if(numero == 7){
+        area = numero * base;
+    }else if(numero == 6){
+        area = numero * base;
     }else if(numero == 5){
         area = perimetro * apotema;
     }else if(numero == 4){
@@ -81,9 +107,9 @@ function calcularGeometria(base , h, apotema){
             area = base * h;
         }
     }else if(numero == 3){
-        area = (base * h) / 2;
-    }
-
-    //Calcular Área
+        area = (base * h) /2;
+    }else(
+        console.log('Não foi possível calcular a área')
+    )
 
 }
