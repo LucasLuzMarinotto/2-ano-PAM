@@ -2,114 +2,64 @@ console.log('Digite um número')
 
 // Variáveis
 
-var apotema = Number;
+var forma;
 
-var tipo = Number;
+var numero;
 
-var numero = Number;
-
-var h = Number;
-
-var perimetro = Number;
-
-var area = Number;
-
-var base = Number;
+var perimetro = 'numero de lados X comprimento dos lados';
 
 // Qual forma é
 
-function formaG(n, t){
+function formaG(n){
     switch(n){
         case 3:
-            console.log('Triângulo');
+            forma = 'Triângulo';
+            area = 'area = (base X h) /2';
+            forma = './imagens./triangulo.jpeg'
             break;
         case 4:
-            if(t <= 1){
-                console.log('Quadrado');
-            }else{
-                console.log('retângulo');
-            }
+            forma = 'Quadradilatero';
+            area = 'area = base X h';
+            forma = './imagens./'
             break;
         case 5:
-            console.log('Pentágono');
+            forma = 'Pentagono';
+            area = 'area = (base X h) /2';
             break;
         case 6:
-            console.log('Hexágono');
+            forma = 'Hexagono';
+            area = 'area = ((base X h) /2) * 6';
             break;
         case 7:
-            console.log('Heptágono');
+            forma = 'Heptagono';
+            area = 'area = (base X h) /2';
             break;
         case 8:
-            console.log('Octógono');
+            forma = 'Octogono';
+            area = 'area = 8 Xbase X h /2';
             break;
         case 9:
-            console.log('Eneágono');
+            forma = 'Eneagono';
+            area = 'area = (base X h) /2';
             break;
         case 10:
-            console.log('Decágono');
+            forma = 'Decagono';
+            area = 'area = (base X h) /2';
             break;
         default:
             console.log('Forma geométrica não implementada');
             break;
     }
-    numero = n;
-    tipo = t;
+}
+function mostrarForma(){
+    document.getElementById('formaNome').innerText = forma;
+    document.getElementById('formaNome').innerText = area;
+    document.getElementById('formaNome').innerText = perimetro;
+    document.getElementById('formaNome').innerText = imagem;
 }
 
-// Calcular perimetro e área
 
-function calcularGeometria(base ,h, apotema){
-
-    // Calcular Perímetro
-
-    if(numero == 10){
-        perimetro = numero * base;
-    }else if(numero == 9){
-        perimetro = numero * base;
-    }else if(numero == 8){
-        perimetro = numero * base;
-    }else if(numero == 7){
-        perimetro = numero * base;
-    }else if(numero == 6){
-        perimetro = numero * base;
-    }else if(numero == 5){
-        perimetro = numero * base;
-    }else if(numero == 4){
-        if(tipo <= 1){
-            perimetro = numero * base;
-        }else{
-            perimetro = (2 * base) + (2 * h);
-        }
-    }else if(numero == 3){
-        perimetro = numero * base;
-    }else(
-        console.log('Não foi possível calcular o perímetro')
-    )
-
-    //Calcular Área
-
-    if(numero == 10){
-        area = numero * base;
-    }else if(numero == 9){
-        area = numero * base;
-    }else if(numero == 8){
-        area = numero * base;
-    }else if(numero == 7){
-        area = numero * base;
-    }else if(numero == 6){
-        area = numero * base;
-    }else if(numero == 5){
-        area = perimetro * apotema;
-    }else if(numero == 4){
-        if(tipo <= 1){
-            area = base * base;
-        }else{
-            area = base * h;
-        }
-    }else if(numero == 3){
-        area = (base * h) /2;
-    }else(
-        console.log('Não foi possível calcular a área')
-    )
-
+function iniciar(){
+    alert('Aperte o botão direito do mouse e clique em inspecionar, depois vá até o console e digite o comando: function formaG(). E dentro do parênteses escreva o número de lados da forma que gostaria de olhar')
+    mostrarForma();
 }

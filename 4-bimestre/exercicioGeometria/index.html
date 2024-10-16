@@ -10,6 +10,29 @@
     
     <h1>Formas Geometricas</h1>
 
+    <div class="container">
+        <div class="alert-info">
+            <strong>Instruções:</strong> Este programa permite escolher uma forma geométrica digitando um número de 3 a 10. 
+            Após escolher, você pode calcular a área ou o perímetro fornecendo os valores necessários. Para começar:
+            <ul>
+                <li>Clique no botão abaixo</li>
+                <li>Pressione <strong>F12</strong> ou <strong>Ctrl + Shift + I</strong> para abrir o console do navegador</li>
+                <li>No console, digite o número correspondente à forma geométrica desejada</li>
+            </ul>
+        </div>
+ 
+        <button onclick="iniciar()">Clique aqui para começar</button>
+    </div>
+ 
+    <div class="container" id="resultado" style="display: none;">
+        <div class="alert-info">
+            <h2 id="formaNome"></h2>
+            <p id="areaCalculo"></p>
+            <p id="perimetroCalculo"></p>
+            <img id="formaImagem" alt="Imagem da forma"/>
+        </div>
+    </div>
+
     <script src="geometrico.js"></script>
 </body>
 </html>
