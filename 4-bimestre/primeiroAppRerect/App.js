@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   container:{
     flex: 1, //Ocupar toda a altura da tela
     justifyContent: 'center', //Centraliza os itens verticalmente
-    alignItens: 'center', //Centraliza os itens horizontalmente
+    alignItems: 'center', //Centraliza os itens horizontalmente
     backgroundColor: '#f5f5f5', //Cor de fundo cinza claro
   },
   title:{
